@@ -14,14 +14,6 @@ pipeline {
         sh 'mvn clean test'
       }
     }
-
-    stage('package') {
-      steps {
-        echo '******* Generating the artifact *******'
-        sh 'mvn package -DskipTests'
-      }
-    }
-
   }
   tools {
     maven 'Maven 3.6.1'
