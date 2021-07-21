@@ -22,7 +22,6 @@ pipeline {
         archiveArtifacts 'target/*.war'
       }
     }
-
   }
   tools {
     maven 'Maven 3.6.1'
@@ -31,6 +30,5 @@ pipeline {
     always {
       echo 'This pipeline is completed..'
     }
-
   }
 }
