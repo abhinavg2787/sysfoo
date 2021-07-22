@@ -5,4 +5,4 @@ RUN mvn package -D skipTests
 
 FROM tomcat as run
 WORKDIR /usr/local/tomcat
-COPY --from=build /opt/demo/target/sysfoo.war webapps/root.war
+COPY --from=build /opt/demo/target/sysfoo.war webapps/ROOT.war
